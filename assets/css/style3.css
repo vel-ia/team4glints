@@ -1,0 +1,182 @@
+
+* {
+    padding :0 ;
+    margin : 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+/*___________________________________________ABOUT SECTION________________________________________________*/
+
+.container {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+#about {
+    text-align: center;
+    height: 500px;
+}
+
+#about .jumbotron {
+    height: 370px;
+    padding: 30px 30px 100px 30px;
+    background-image:url("../img/background.jpg");
+    background-size: cover;
+    background-position-y: center; 
+    text-align: left;
+    font-size: 18px;
+}
+
+.jumbotron .foto-toko {
+    width: 230px;
+    border: 13px solid var(--main-color-2);
+    border-radius: 3px;
+    box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+    margin: 5px 30px;
+    margin-right: 50px;
+    float: left;
+    margin-bottom: 25px;
+
+}
+
+.jumbotron .jumbotron-teks {
+    color: var(--main-color-2);
+    background-color: var(--main-color-1);
+    line-height: 25px;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+.jumbotron .jumbotron-teks .judul {
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 1px solid var(--main-color-2);
+    padding-bottom: 10px;
+}
+
+.jumbotron .jumbotron-teks p{
+    margin-top: 30px;
+    text-align: justify;
+}
+
+
+
+/*_____________________________RESPONSIVE MEDIA QUERIES________________________________*/
+
+
+@media screen and (min-width: 1600px) {
+    .container {
+        height:600px;
+    }
+
+    #about .jumbotron {
+        height: 500px;
+        margin-bottom: 30px;
+        text-align: left;
+        padding: 80px;
+    }
+
+    .jumbotron .jumbotron-teks {
+        margin-top: 100px;
+        margin-right: 30px;
+        padding: 40px;
+    }
+
+   .jumbotron .jumbotron-teks .judul {
+        font-size: 40px;
+    }
+
+    .jumbotron .jumbotron-teks p {
+        font-size: 25px;
+        line-height: 35px;
+        margin-top: 40px;
+    }
+
+    .jumbotron .foto-toko {
+        float: left;
+        margin-top: 20px;
+        margin-left: 0px;
+        width: 300px;
+    }
+}
+
+
+@media screen and (min-width: 601px) {
+    .container {
+        height:600px;
+    }
+
+    #about .jumbotron {
+        height: 400px;
+        padding: 100px 50px 100px 30px;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .jumbotron .jumbotron-teks {
+        padding: 50px;
+        margin-top: 30px;
+    }
+    
+    .jumbotron .jumbotron-teks p {
+        font-size: 18px;
+    }
+    
+    .jumbotron .jumbotron-teks .judul {
+        font-size: 25px;
+    }
+
+    .jumbotron .foto-toko {
+        float: left;
+        width: 230px;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        height:800px;
+    }
+    
+    #about .jumbotron {
+        height: 540px;
+        margin-bottom: 30px;
+        padding: 60px 0 200px 0;
+        text-align: center;
+    }
+
+    .jumbotron .jumbotron-teks {
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    .jumbotron .jumbotron-teks h1 {
+        margin: 0;
+    }
+
+    .jumbotron .jumbotron-teks .judul {
+        font-size: 20px;
+        margin: 10px 0px;
+    }
+
+    .jumbotron .jumbotron-teks p {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .jumbotron .foto-toko {
+        width: 180px;
+        margin-left: 50px;
+        float: none;
+        
+    }
+}

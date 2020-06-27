@@ -1,0 +1,315 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial;
+}
+
+.banner-section {
+  margin-bottom: 0;
+}
+
+.banner-section .banner-wrapper {
+  text-align: center;
+  margin: 0;
+}
+
+.banner-section .banner-wrapper .current-banner {
+  width: 100%;
+  height:auto;
+  margin: 0 auto;
+}
+
+.banner-section .banner-buttons {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.banner-section .banner-buttons .banner-button {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #D3D3D3;
+  border: 1px solid black;
+}
+
+.banner-section .banner-buttons .banner-button:hover {
+  background-color: #fff;
+}
+
+.categories-section {
+  background-color: var(--main-color-2);
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.categories-section h2 {
+  text-align: center;
+  font-size: 30px;
+  padding:20px;
+  color: white;
+  background-color: var(--main-color-3);
+}
+
+
+.categories-section .shop-categories {
+  list-style: none;
+  display: flex;
+  padding: 20px;
+}
+
+.categories-section .shop-categories li {
+  flex: auto;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+
+.categories-section .shop-categories .category a img {
+  object-fit: cover;
+  width: 90%;
+  border-radius: 10px;
+  filter: drop-shadow(5px 5px 5px #222);
+  transition: transform .3s;
+}
+
+
+.categories-section .shop-categories .category a img:hover {
+  opacity: 0.7;
+  transform: scale(0.9);
+  filter:none;
+}
+
+.product-section {
+  width: 100%;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-color: var(--main-color-2);
+}
+
+.product-section h3 {
+  text-align:center;
+  font-size: 25px;
+  padding: 15px 25px;
+  width: 30%;
+  margin: 0 auto;
+  color:var(--main-color-3);
+  border-bottom: 2px solid var(--main-color-3);
+}
+
+.product-section .product-wrapper {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 0px;
+  padding-bottom: 150px;
+}
+
+
+.product-section .product-wrapper .product-container .product-item {
+  padding-top: 20px;
+}
+
+.product-section .product-wrapper .product-container .product-item h4 {
+    border-bottom: 1px solid #989898;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+}
+
+.product-item  img {
+  width: 100%;
+}
+
+.product-section .product-wrapper .product-container .product-item .product-description {
+  font-size: 12px;
+}
+
+.product-section .product-wrapper .product-container .product-item .product-price {
+  text-align: right;
+  font-weight: bold;
+}
+
+.product-section .product-wrapper .product-container .product-item .colorsize-description{
+  background-color: var(--main-color-3);
+  color:white;
+  font-size: 12px;
+  visibility: hidden;
+  max-width: 100%;
+  opacity: 0;
+}
+
+.product-section .product-wrapper .product-container .product-item:hover {
+  border: 1px solid #000;
+}
+
+.product-section .product-wrapper .product-container .product-item:hover .colorsize-description{
+  visibility: visible;
+  opacity: 1;
+  text-align: center;
+  display:block;
+  transition: 0.2s;
+}
+
+.product-section .product-wrapper .product-container .shop-buttons {
+  margin-top: 10px;
+  max-width: 100%;
+  padding: 5px;
+  position: relative;
+}
+
+.product-section .product-wrapper .product-container .shop-buttons .shop-btn {
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+
+}
+
+.product-section .product-wrapper .product-container .shop-buttons .cart {
+  margin-top:10px;
+  color: var(--main-color-2);
+  background-color: var(--main-color-1);
+}
+
+.product-section .product-wrapper .product-container .shop-buttons .order {
+  color: #fff;
+  background-color: var(--main-color-3);
+}
+
+.product-section .product-wrapper .product-container .shop-buttons .shop-btn:hover {
+  background-color: var(--main-color-2);
+  color: var(--main-color-3);
+  transition: 0.2s;
+  border: 1px solid #000;
+}
+
+.product-item h4 {
+  color:var(--main-color-1);
+}
+
+.product-item p {
+  color:var(--main-color-1);
+}
+
+.team-section {
+  padding-top: 40px;
+  margin-bottom: 0px;
+  background-color: var(--main-color-2);
+}
+
+.team-section .team-title {
+  font-size: 30px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: var(--main-color-3);
+  color: #fff;
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.team-section .team-wrapper {
+  padding: 50px 10px;
+}
+
+.team-section .team-wrapper ul {
+  padding: 0;
+  list-style: none;
+  margin: 0 auto;
+  display: flex;
+}
+
+.team-section .team-wrapper ul .team-container {
+  flex: auto;
+  width: 200px;
+}
+
+.team-section .team-wrapper ul .team-container .team-member {
+  text-align: center;
+  font-weight: bold;
+}
+
+.team-section .team-wrapper ul .team-container .team-member img {
+  width:100%;
+}
+
+.team-container .team-member p {
+  color: var(--main-color-3)
+}
+
+@media (max-width: 300px) {
+  
+  .product-section .product-wrapper .product-container .product-item h4 {
+    font-size: 12px;
+  }
+  
+  .product-section .product-wrapper .product-container .product-item .product-description {
+    font-size: 10px;
+  }
+  
+}
+
+@media (max-width: 600px) { /** for mobile and smaller device **/
+  .banner-section .banner-wrapper .current-banner {
+    max-width: 100%;
+    height:auto;
+  }
+
+  .categories-section h2 {
+    font-size: 25px;
+  }
+
+  .categories-section .shop-categories {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .categories-section .shop-categories li {
+    line-height: 50px;
+  }
+
+  .categories-section .shop-categories .category a img {
+    width: 70%;
+  }
+
+  .product-section h3 {
+    font-size: 25px;
+    width: 60%;
+  }
+
+  .product-wrapper li {
+    float:left;
+    width:46%;
+  }
+}
+
+@media (min-width: 601px) { /** for tablet and larger device **/
+  .product-section .product-wrapper li {
+    float:left;
+    width:24%;
+  }
+  
+  .banner-section .banner-wrapper .current-banner {
+    max-width: 100%;
+    height:auto;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1600px) { /** for desktop and larger device **/
+  .product-section .product-wrapper li {
+    float:left;
+    width:20%;
+  }
+  
+  .banner-section .banner-wrapper .current-banner {
+    max-width: 100%;
+    height:auto;
+    margin: 0;
+  }
+}
+/*category img 1 <!--https://pixabay.com/photos/close-up-dress-fingers-girl-hand-1844786/--> */
+/*category img 2 <!--https://pixabay.com/photos/jeans-pants-trouser-buttons-2979818/--> */
+/*category img 3 <!--https://pixabay.com/photos/bag-brand-business-map-content-1853847/--> */
